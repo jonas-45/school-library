@@ -1,0 +1,3 @@
+class Decorator < Nameable
+  
+end
