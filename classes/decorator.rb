@@ -1,3 +1,5 @@
+require_relative 'nameable'
+
 class Decorator < Nameable
   attr_accessor :nameable
 
@@ -11,14 +13,14 @@ class Decorator < Nameable
   end
 end
 
-#capitaldecorator class
+# capitaldecorator class
 class CapitalizeDecorator < Decorator
   def correct_name
-    super.capitalize()
+    super.capitalize
   end
 end
 
-#trimerdecorator class
+# trimerdecorator class
 class TrimmerDecorator < Decorator
   def correct_name
     super[0...10]
