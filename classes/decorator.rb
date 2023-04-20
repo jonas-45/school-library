@@ -17,3 +17,10 @@ class CapitalizeDecorator < Decorator
     super.capitalize()
   end
 end
+
+#trimerdecorator class
+class TrimmerDecorator < Decorator
+  def correct_name
+    super[0...10]
+  end
+end
