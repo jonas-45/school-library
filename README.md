@@ -158,6 +158,6 @@ I would like to thank the microverse team for the inspiration and motivation.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](MIT.md) licensed.
+This project is [MIT](https://github.com/jonas-45/school-library/blob/add-ui/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
