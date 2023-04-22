@@ -59,4 +59,17 @@ class App
     @books << Book.new(title, author)
     puts 'Book created successfully'
   end
+
+  def create_rental
+    create_rental_book
+    book_index = gets.chomp.to_i
+    puts
+    create_rental_person
+    person_index = gets.chomp.to_i
+    puts
+    print 'Date: '
+    date = gets.chomp
+    @rentals << Rental.new(date, @books[book_index], @people[person_index])
+    puts 'Rental created successfully'
+  end
 end
