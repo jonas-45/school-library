@@ -26,3 +26,18 @@ def handle_menu_option(option, app)
     app.list_rentals_for_person_id
   end
 end
+
+def main
+  app = App.new
+  puts 'Welcome to School Library App '
+  puts '----------------------------------'
+  loop do
+    display_menu
+    option = gets.chomp.to_i
+    handle_menu_option(option, app)
+    break if option == 7
+  end
+  puts 'Thank you for using this app!, Have a great day'
+end
+
+main
