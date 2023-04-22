@@ -8,7 +8,7 @@ class Classroom
   end
 
   def add_student(student)
-    @students = student
+    @students << student #  student is pushed into the array
     student.classroom = self
   end
 end
