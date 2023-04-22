@@ -55,6 +55,7 @@ School Library is an app that is used to manage school library books and to trac
 - **[Added a Student class]**
 - **[Added a Teacher class]**
 - **[Used decorator design pattern]**
+- **[Add ruby associations]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
