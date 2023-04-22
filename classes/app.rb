@@ -22,7 +22,7 @@ class App
     end
   end
 
-  def list_people
+  def list_all_people
     if @people.empty?
       puts 'There are no people in the library'
     else
