@@ -1,4 +1,5 @@
 require_relative 'app'
+
 def display_menu
   puts 'Please choose an option by entering a number from 1 to 7:'
   puts '1 - List all books'
@@ -13,9 +14,9 @@ end
 def handle_menu_option(option, app)
   case option
   when 1
-    app.list_books
+    app.list_all_books
   when 2
-    app.list_people
+    app.list_all_people
   when 3
     app.create_person
   when 4
