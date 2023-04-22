@@ -101,4 +101,27 @@ class App
     end
     person_type
   end
+
+  def create_rental_book
+    if @books.empty?
+      puts 'There are no books in the library to rent'
+      return
+    end
+    puts 'Select a book from the following list by number'
+    @books.each_with_index do |book, index|
+      puts "#{index}) Title: '#{book.title}', Author: #{book.author}"
+    end
+  end
+
+  def create_rental_person
+    puts 'Select a person from the following list by number (not id)'
+    if @people.empty?
+      puts 'There are no people in the library'
+      return
+    end
+
+    @people.each_with_index do |person, index|
+      puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+    end
+  end
 end
