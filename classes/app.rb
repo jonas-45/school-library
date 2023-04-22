@@ -72,4 +72,23 @@ class App
     @rentals << Rental.new(date, @books[book_index], @people[person_index])
     puts 'Rental created successfully'
   end
+
+  def create_student(name, age)
+    print 'Classroom: '
+    classroom_name = gets.chomp
+    print 'Has parent permission? [Y/N]: '
+    parent_permission = gets.chomp.downcase == 'y'
+    classroom = Classroom.new(classroom_name)
+    student = Student.new(classroom, age, name, parent_permission: parent_permission)
+    @people << student
+    puts 'Student created successfully'
+  end
+
+  def create_teacher(name, age)
+    print 'Specialization: '
+    specialization = gets.chomp
+    teacher = Teacher.new(name, specialization, age)
+    @people << teacher
+    puts 'Teacher created successfully'
+  end
 end
