@@ -124,4 +124,13 @@ class App
       puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
   end
+
+  def list_rentals_for_person_id
+    print 'ID of person: '
+    id = gets.chomp.to_i
+    puts 'Rentals:'
+    @rentals.each do |rental|
+      puts "Date: #{rental.date}, Book Title '#{rental.book.title}' by #{rental.book.author}" if rental.person.id == id
+    end
+  end
 end
