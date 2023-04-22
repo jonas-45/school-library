@@ -10,6 +10,8 @@ class App
   def initialize
     @books = []
     @people = []
+    @classrooms = []
+    @rentals = []
   end
 
   def list_all_books
