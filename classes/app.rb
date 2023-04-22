@@ -31,4 +31,21 @@ class App
       end
     end
   end
+
+  def create_person
+    person_type = person_option
+    return if person_type.nil?
+
+    print 'Name: '
+    name = gets.chomp
+    print 'Age: '
+    age = gets.chomp
+
+    case person_type
+    when '1'
+      create_student(name, age)
+    when '2'
+      create_teacher(name, age)
+    end
+  end
 end
