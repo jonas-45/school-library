@@ -17,7 +17,7 @@ class Person < Nameable
     of_age? || @parent_permission
   end
 
-  def add_rental(person, date = Date.today, book = self)
+  def add_rental(rental)
     @rentals.push(rental)
     rental.person = self
   end
