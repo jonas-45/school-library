@@ -56,6 +56,8 @@ School Library is an app that is used to manage school library books and to trac
 - **[Added a Teacher class]**
 - **[Used decorator design pattern]**
 - **[Add ruby associations]**
+- **[Created console ui for app]**
+- **[Created and entry point into app from main.rb]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,6 +158,6 @@ I would like to thank the microverse team for the inspiration and motivation.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](MIT.md) licensed.
+This project is [MIT](https://github.com/jonas-45/school-library/blob/add-ui/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
